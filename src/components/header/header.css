@@ -63,7 +63,7 @@
 }
 
 .headerIcon {
-  color: lightgray;
+  color: gray;
 }
 
 .headerSearchItem {
@@ -78,7 +78,7 @@
 }
 
 .headerSearchText {
-  color: lightgray;
+  color: gray;
   cursor: pointer;
 }
 
