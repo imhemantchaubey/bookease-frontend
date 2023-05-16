@@ -74,7 +74,7 @@ const Header = ({ type }) => {
         {type !== "list" && (
           <>
             <h1 className="headerTitle">
-              A lifetime of discounts? It's genius...
+              A lifetime of discounts? It's genius...!
             </h1>
             <p className="headerDesc">
               Unlock exclusive discounts and savings throughout your lifetime
