@@ -11,7 +11,7 @@ const FeaturedProperties = () => {
         />
         <span className="fpName">The Lalit</span>
         <span className="fpCity">Mumbai, India</span>
-        <span className="fpPrice">Starting from &#8377;9000</span>
+        <span className="fpPrice">Starting from ₹9000</span>
         <div className="fpRating">
           <button>8.9</button>
           <span>Excellent</span>
@@ -25,7 +25,7 @@ const FeaturedProperties = () => {
         />
         <span className="fpName">The Lalit</span>
         <span className="fpCity">Mumbai, India</span>
-        <span className="fpPrice">Starting from &#8377;9000</span>
+        <span className="fpPrice">Starting from ₹9000</span>
         <div className="fpRating">
           <button>8.9</button>
           <span>Excellent</span>
@@ -39,7 +39,7 @@ const FeaturedProperties = () => {
         />
         <span className="fpName">The Lalit</span>
         <span className="fpCity">Mumbai, India</span>
-        <span className="fpPrice">Starting from &#8377;9000</span>
+        <span className="fpPrice">Starting from ₹9000</span>
         <div className="fpRating">
           <button>8.9</button>
           <span>Excellent</span>
@@ -53,7 +53,7 @@ const FeaturedProperties = () => {
         />
         <span className="fpName">The Lalit</span>
         <span className="fpCity">Mumbai, India</span>
-        <span className="fpPrice">Starting from &#8377;9000</span>
+        <span className="fpPrice">Starting from ₹9000</span>
         <div className="fpRating">
           <button>8.9</button>
           <span>Excellent</span>
