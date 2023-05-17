@@ -53,6 +53,23 @@
   cursor: pointer;
 }
 
+.lsOptions {
+  padding: 10px;
+}
+
+.lsOptionItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 12px;
+}
+
+.lsOptionInput {
+  width: 50px;
+  text-align: center;
+}
+
 .listResult {
   flex: 3;
 }
