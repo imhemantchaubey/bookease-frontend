@@ -21,3 +21,15 @@
   color: #003580;
   cursor: pointer;
 }
+
+.fText {
+  font-size: 12px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.fText > a {
+  color: #003580;
+  text-decoration: none;
+  cursor: pointer;
+}

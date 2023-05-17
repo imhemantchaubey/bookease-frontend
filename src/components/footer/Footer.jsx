@@ -59,7 +59,15 @@ const Footer = () => {
         </ul>
       </div>
       <div className="fText">
-        Copyright © 2023 | All Rights Reserved | imhemantchaubey
+        Copyright © 2023 | All Rights Reserved |{" "}
+        <a
+          href="https://github.com/imhemantchaubey"
+          target="_blank"
+          rel="noreferrer"
+          className="imhemantchaubey"
+        >
+          imhemantchaubey
+        </a>
       </div>
     </div>
   )
