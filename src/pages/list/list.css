@@ -85,3 +85,7 @@
 .listResult {
   flex: 3;
 }
+
+input:focus-visible {
+  outline: none;
+}
