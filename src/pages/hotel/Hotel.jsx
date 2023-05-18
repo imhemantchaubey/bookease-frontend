@@ -1,5 +1,11 @@
+import { useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faLocationDot } from "@fortawesome/free-solid-svg-icons"
+import {
+  faCircleArrowLeft,
+  faCircleArrowRight,
+  faLocationDot,
+} from "@fortawesome/free-solid-svg-icons"
+import { faCircleXmark } from "@fortawesome/free-regular-svg-icons"
 
 import Header from "../../components/header/Header"
 import Navbar from "../../components/navbar/Navbar"
@@ -9,6 +15,22 @@ import Footer from "../../components/footer/Footer"
 import "./hotel.css"
 
 const Hotel = () => {
+  const [slideNumber, setSlideNumber] = useState(0)
+  const [open, setOpen] = useState(false)
+
+  const handleOpen = (i) => {
+    setSlideNumber(i)
+    setOpen(true)
+  }
+
+  const handleMove = (direction) => {
+    if (direction === "l") {
+      slideNumber > 0 && setSlideNumber(slideNumber - 1)
+    } else {
+      slideNumber < photos.length - 1 && setSlideNumber(slideNumber + 1)
+    }
+  }
+
   const photos = [
     {
       src: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/134635695.jpg?k=8aef33edb3d6ea1c9927ca794041f3d18b82ab103c72ed3ceb03241698d936e6&o=&hp=1",
@@ -46,6 +68,28 @@ const Hotel = () => {
       <Navbar />
       <Header type="list" />
       <div className="hotelContainer">
+        {open && (
+          <div className="slider">
+            <FontAwesomeIcon
+              icon={faCircleXmark}
+              className="close"
+              onClick={() => setOpen(false)}
+            />
+            <FontAwesomeIcon
+              icon={faCircleArrowLeft}
+              className="arrow"
+              onClick={() => handleMove("l")}
+            />
+            <div className="sliderWrapper">
+              <img src={photos[slideNumber].src} alt="" className="sliderImg" />
+            </div>
+            <FontAwesomeIcon
+              icon={faCircleArrowRight}
+              className="arrow"
+              onClick={() => handleMove("r")}
+            />
+          </div>
+        )}
         <div className="hotelWrapper">
           <button className="bookNow">Reserve or Book Now</button>
           <h1 className="hotelTitle">Shesha Kuteera</h1>
@@ -61,9 +105,14 @@ const Hotel = () => {
             airport taxi
           </div>
           <div className="hotelImages">
-            {photos.map((photo) => (
+            {photos.map((photo, i) => (
               <div className="hotelImgWrapper">
-                <img src={photo.src} alt="" className="hotelImg" />
+                <img
+                  onClick={() => handleOpen(i)}
+                  src={photo.src}
+                  alt=""
+                  className="hotelImg"
+                />
               </div>
             ))}
           </div>
