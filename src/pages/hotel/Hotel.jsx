@@ -1,9 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons"
+
 import Header from "../../components/header/Header"
 import Navbar from "../../components/navbar/Navbar"
 
 import "./hotel.css"
-import { faLocationDot } from "@fortawesome/free-solid-svg-icons"
 
 const Hotel = () => {
   const photos = [
@@ -44,6 +45,7 @@ const Hotel = () => {
       <Header type="list" />
       <div className="hotelContainer">
         <div className="hotelWrapper">
+          <button className="bookNow">Reserve or Book Now</button>
           <h1 className="hotelTitle">Shesha Kuteera</h1>
           <div className="hotelAddress">
             <FontAwesomeIcon icon={faLocationDot} />
